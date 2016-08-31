@@ -1,21 +1,76 @@
+
 .pokedex{
 
-	float: center;
+  margin-left: 300px;
+  	margin-top: 105px;
 	position: relative;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 25px;
-}
-.pokedexImage{
-  position: absolute;
-  z-index: 1;
-  float: center;
+
 }
 
 .questionSet1{
   position: absolute;
-  margin-left: 85px;
-  margin-top: -385px;
+  margin-left: 26px;
+  margin-top: -410px;
   z-index: 2;
   float: center;
+}
+.questionSet2{
+  position: absolute;
+  margin-left: 26px;
+  margin-top: -410px;
+  z-index: 2;
+  float: center;
+}
+.questionSet3{
+  position: absolute;
+  margin-left: 26px;
+  margin-top: -410px;
+  z-index: 2;
+  float: center;
+}
+.questionSet4{
+  position: absolute;
+  margin-left: 26px;
+  margin-top: -410px;
+  z-index: 2;
+  float: center;
+}
+.questionSet5{
+  position: absolute;
+  margin-left: 26px;
+  margin-top: -410px;
+  z-index: 2;
+  float: center;
+}
+.questionSet6{
+  position: absolute;
+  margin-left: 26px;
+  margin-top: -410px;
+  z-index: 2;
+  float: center;
+}
+form{
+	margin-top: 300px;
+	margin-left: 400px;
+}
+
+h2{
+	margin-top: -510px;
+}
+header{
+	  margin-left: 300px;
+	position: relative;
+}
+.mainArea1{
+	  margin-left: 300px;
+	position: relative;
+}
+body{
+  background: #D3D3D3;
+}
+.startButton{
+	margin-left: 212px;
+}
+.mainArea1 p{
+	margin-left: 90px;
 }
