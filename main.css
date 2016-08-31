@@ -1,0 +1,21 @@
+.pokedex{
+
+	float: center;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 25px;
+}
+.pokedexImage{
+  position: absolute;
+  z-index: 1;
+  float: center;
+}
+
+.questionSet1{
+  position: absolute;
+  margin-left: 85px;
+  margin-top: -385px;
+  z-index: 2;
+  float: center;
+}
