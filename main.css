@@ -74,3 +74,24 @@ body{
 .mainArea1 p{
 	margin-left: 90px;
 }
+audio{
+  position: absolute;
+  margin-top: 530px;
+}
+.usersFeedback{
+	position:absolute;
+	margin-left: 400px;
+	margin-top: -310px;
+	z-index: 3;
+	font-size: larger;
+}
+.usersCurrentScoreCorrect{
+	position:absolute;
+	margin-left: 49px;
+	margin-top: -300px
+}
+.nextQuestion{
+	position: absolute;
+	margin-left: 420px;
+	margin-top: -260px;
+}

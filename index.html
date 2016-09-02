@@ -13,8 +13,10 @@
       <h1> Pokemon League Admissions Exam! </h1>
     </header>
 <main>
-
-  <div class="mainArea1">
+  <audio width="320" height="240" autoplay controls loop muted>
+    <source src="media/pokemonAudio.mp3" type="audio/mp3">
+  </audio>
+  <div class="mainArea1 ">
     <div class="pokeBall">
       <img src="images/pokeball.png">
     </div>
@@ -33,9 +35,9 @@
             <img src="images/lickitung.PNG" class="pokedexImageLickitung" width="270" height="305">
             <h2>Lickitung's tongue is twice the length of its body?</h2>
               <form action="">
-                <input type="radio" name="answer" value="True"> True<br>
-                <input type="radio" name="answer" value="False"> False<br>
-                <input type="submit" name="submit" value="Submit">
+                <input type="radio" name="answer" value="True" class="input1" required=""> True<br>
+                <input type="radio" name="answer" value="False" class="input1" required=""> False<br>
+                <input class="submitAnswerButton1" type="submit" name="submit" value="Submit">
               </form>
           </div>
 
@@ -43,9 +45,9 @@
             <img src="images/vulpix.PNG" width="270" height="305">
             <h2>Ninetales evolves from Vulpix only by use of the fire stone?</h2>
               <form action="">
-                <input type="radio" name="answer" value="True"> True<br>
-                <input type="radio" name="answer" value="False"> False<br>
-                <input type="submit" name="submit" value="Submit">
+                <input type="radio" name="answer" value="True" class="input2"> True<br>
+                <input type="radio" name="answer" value="False" class="input2"> False<br>
+                <input class="submitAnswerButton2" type="submit" name="submit" value="Submit">
               </form>
           </div>
 
@@ -53,9 +55,9 @@
             <img src="images/hitmonlee.PNG" width="270" height="305">
             <h2>Hitmonlee is also known as the punching demon?</h2>
               <form action="">
-                <input type="radio" name="answer" value="True"> True<br>
-                <input type="radio" name="answer" value="False"> False<br>
-                <input type="submit" name="submit" value="Submit">
+                <input type="radio" name="answer" value="True" class="input3"> True<br>
+                <input type="radio" name="answer" value="False" class="input3"> False<br>
+                <input class="submitAnswerButton3" type="submit" name="submit" value="Submit">
               </form>
           </div>
 
@@ -63,9 +65,9 @@
             <img src="images/magikarp.PNG" width="270" height="305">
             <h2>The only attack magikarp originally knows is splash?</h2>
               <form action="">
-                <input type="radio" name="answer" value="True"> True<br>
-                <input type="radio" name="answer" value="False"> False<br>
-                <input type="submit" name="submit" value="Submit">
+                <input type="radio" name="answer" value="True" class="input4"> True<br>
+                <input type="radio" name="answer" value="False" class="input4"> False<br>
+                <input class="submitAnswerButton4" type="submit" name="submit" value="Submit">
               </form>
           </div>
 
@@ -73,25 +75,31 @@
             <img src="images/caterpie.PNG" width="270" height="305">
             <h2>Caterpie is the worlds smallest Pokemon?</h2>
               <form action="">
-                <input type="radio" name="answer" value="True"> True<br>
-                <input type="radio" name="answer" value="False"> False<br>
-                <input type="submit" name="submit" value="Submit">
+                <input type="radio" name="answer" value="True" class="input5"> True<br>
+                <input type="radio" name="answer" value="False" class="input5"> False<br>
+                <input class="submitAnswerButton5" type="submit" name="submit" value="Submit">
               </form>
           </div>
 
           <div class="questionSet6">
             <img src="images/koffing.PNG" width="270" height="305">
-            <h2>koffing was first discovered in a public bath house? </h2>
+            <h2>Koffing was first discovered in a public bath house? </h2>
               <form action="">
-                <input type="radio" name="answer" value="True"> True<br>
-                <input type="radio" name="answer" value="False"> False<br>
-                <input class="submitAnswerButton" type="submit" name="submit" value="Submit">
+                <input type="radio" name="answer" value="True" class="input6"> True<br>
+                <input type="radio" name="answer" value="False" class="input6"> False<br>
+                <input class="submitAnswerButton6" type="submit" name="submit" value="Submit">
               </form>
           </div>
 
         </div>
     </div>
 
+<div class="usersFeedback"> </div>
+<div class="usersCurrentScoreCorrect"> </div>
+<div class="usersCurrentScoreIncorrect"></div>
+<button type="submit" class="nextQuestion" >
+<span class="label">Next Question</span>
+</button>
 
 
 </main>
