@@ -95,3 +95,8 @@ audio{
 	margin-left: 420px;
 	margin-top: -260px;
 }
+.usersCurrentScoreIncorrect{
+	position: absolute;
+	margin-left: 49px;
+	margin-top: -240px;
+}

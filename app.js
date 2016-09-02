@@ -37,7 +37,21 @@ $(document).ready(function() {
 
         // offer feed back on answer. Increments correct or false by 1.
         giveFeedBack(userInput2, correctAnswerVar);
+        $(".questionSet2").hide();
+        $(".nextQuestion").show();
+    });
 
+    $(".submitAnswerButton3").click(function(e) {
+        //prevents form from submitting.
+        e.preventDefault();
+        userInput3 = $('input[class=input3]:checked').val();
+
+        // grabs answer from object and stores in varible.
+        var correctAnswerVar = correctAnswersParent.answer2;
+
+        // offer feed back on answer. Increments correct or false by 1.
+        giveFeedBack(userInput3, correctAnswerVar);
+        $(".questionSet3").hide();
         $(".nextQuestion").show();
     });
 
@@ -46,21 +60,25 @@ $(document).ready(function() {
       //prevents form from submitting.
       e.preventDefault();
       if (userInput1 === "True" || "False" ){
+        userInput1 = " ";
         questionSet2();
       }
-      else if (userInput2 === "True" || "False"){
+      else if (userInput2 === "True" || "False" ){
+        userInput2 = " ";
         questionSet3();
       }
-      else if (userInput3 === "True" || "False"){
+      else if (userInput3 === "True" || "False" ){
+        userInput3 = " ";
         questionSet4();
       }
-      else if (userInput4 === "True" || "False") {
+      else if (userInput4 === "True" || "False" ) {
         questionSet5();
       }
-      else if (userInput5 === "True" || "False"){
+      else if (userInput5 === "True" || "False" ){
         questionSet6();
       }
     })
+
 
     function giveFeedBack(userInput, correctAnswerFromParentModel) {
         if (userInput == correctAnswerFromParentModel) {
@@ -72,7 +90,7 @@ $(document).ready(function() {
         else {
           $(".usersFeedback").html("Wrong!");
           incorrectAnswersTotal ++;
-          $(".usersCurrentScore").html("You have " + incorrectAnswersTotal + "out of 6 correct");
+          $(".usersCurrentScoreIncorrect").html("You have " + incorrectAnswersTotal + "out of 6 correct");
 
         }
     }
@@ -121,6 +139,7 @@ $(document).ready(function() {
         $(".questionSet4").hide();
         $(".questionSet5").hide();
         $(".questionSet6").hide();
+        $(".nextQuestion").hide();
     }
 
     function questionSet2() {
